@@ -8,6 +8,6 @@ There is still a lot to be done, like:
 
 <h3>How to teleport</h3>
 1) Click in the map icon <br>
-2) Choose and click in the map you want to go (still have some maps to implement) <br>
+2) Choose and click in the map you want to go (still have some maps to implement)
 
-Please enjoy and feel free to modify as much as you want to.
+<br>Please enjoy and feel free to modify as much as you want to.
