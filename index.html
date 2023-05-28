@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="rgb(0, 125, 241)" />
+    <title>Club Penguin Map Teleport</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body id="body">
+    <!--Pré-loader-->
+    <div class="wrapper">
+        <div class="loader">
+            <h1>Aguarde, carregando conteúdo!</h1>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div class="btn" id="sentar"></div>
+        <div class="btn" id="dancar"></div>
+        <div class="btn" id="dancar2"></div>
+        <div class="btn"></div>
+        <input type="text" id="input_fala" value="">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+    </div>
+    <div id="cenario">
+        <div class="map" onclick="showMap()"></div>
+        <div id="openMap">
+            <div class="location" id="plaza" onclick="tp_plaza()"></div>
+            <div class="location" id="centro" onclick="tp_centro()"></div>
+            <div class="location" id="iglu" onclick="tp_iglu()"></div>
+            <div class="location" id="forte" onclick="tp_forte()"></div>
+            <div class="location" id="praia" onclick="tp_praia()"></div>
+            <div class="location" id="ancoradouro" onclick="tp_ancoradouro()"></div>
+            <div class="location" id="prainha" onclick="tp_prainha()"></div>
+            <div class="location" id="casinhaMina" onclick="tp_casinhaMina()"></div>
+            <div class="location" id="patioDojo" onclick="tp_patioDojo()"></div>
+            <div class="location" id="iceberg" onclick="tp_iceberg()"></div>
+            <div class="location" id="estadio" onclick="tp_estadio()"></div>
+            <div class="location" id="estacaoEsqui" onclick="tp_estacaoEsqui()"></div>
+            <div class="location" id="montanha" onclick="tp_montanha()"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+/*pre loader*/
+.wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: rgb(0, 125, 241);
+    display: grid;
+    place-items: center;
+    transition: opacity .25s, visibility 1s;
+}
+
+.fade {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    color: whitesmoke;
+    font-family: Roboto;
+    font-size: 200%;
+    animation: float 3s ease-in-out infinite;
+}
+
+/*content*/
+* {
+    box-sizing: border-box;
+}
+
+#body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#cenario {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2d2d2d;
+    background-image: url(./CP_map_teleport_images/maps/CP_center.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 10vw;
+    height: 10vh;
+    background-image: url(./CP_map_teleport_images/icons/CP_map_icon.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 3vw;
+    bottom: 5vh;
+    cursor: pointer;
+}
+
+.map:hover {
+    transform: scale(1.1);
+}
+
+#openMap {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./CP_map_teleport_images/maps/CP_mapa2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#plaza {
+    width: 15vw;
+    height: 13vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    right: 28vw;
+    bottom: 33vh;
+    cursor: pointer;
+    border-top-right-radius: 50%;
+}
+
+#centro {
+    width: 15vw;
+    height: 13vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 30vw;
+    bottom: 32vh;
+    cursor: pointer;
+}
+
+#iglu {
+    width: 5vw;
+    height: 7vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 45vw;
+    bottom: 27vh;
+    cursor: pointer;
+}
+
+#forte {
+    width: 10vw;
+    height: 10vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 46vw;
+    bottom: 40.5vh;
+    cursor: pointer;
+    border-top-left-radius: 50%;
+}
+
+#praia {
+    width: 11vw;
+    height: 25vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 1vw;
+    bottom: 20vh;
+    cursor: pointer;
+    border-top-right-radius: 50%;
+}
+
+#ancoradouro {
+    width: 13vw;
+    height: 22vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 14vw;
+    bottom: 7vh;
+    cursor: pointer;
+    border-top-left-radius: 50%;
+}
+
+#prainha {
+    width: 13vw;
+    height: 15vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    right: 4vw;
+    bottom: 20vh;
+    cursor: pointer;
+}
+
+#casinhaMina {
+    width: 13vw;
+    height: 13vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    right: 17vw;
+    bottom: 46vh;
+    cursor: pointer;
+}
+
+#patioDojo {
+    width: 9vw;
+    height: 9vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 55vw;
+    top: 21vh;
+    cursor: pointer;
+}
+
+#iceberg {
+    width: 7vw;
+    height: 8vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    right: 3vw;
+    top: 38vh;
+    cursor: pointer;
+    border-bottom-left-radius: 50%;
+}
+
+#estadio {
+    width: 13vw;
+    height: 11vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 36vw;
+    top: 38vh;
+    cursor: pointer;
+}
+
+#estacaoEsqui {
+    width: 8vw;
+    height: 10vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 25vw;
+    top: 43vh;
+    cursor: pointer;
+    border-top-left-radius: 50%;
+}
+
+#montanha {
+    width: 10vw;
+    height: 20vh;
+    opacity: 60%;
+    position: absolute;
+    z-index: 2;
+    left: 17vw;
+    top: 23vh;
+    cursor: pointer;
+}
+
+.location {
+    background-color: red;
+}
+
+/*Menu*/
+#menu {
+    width: 65vw;
+    height: 6vh;
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+    background-color: rgb(0, 125, 241);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 3px solid white;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 100%;
+    background-color: rgb(2, 88, 168);
+    border-radius: 100%;
+    border: 2.5px solid white;
+}
+
+#input_fala {
+    width: 40vw;
+    height: 3vh;
+    background-color: rgb(2, 88, 168);
+    border-radius: 10px;
+    border: 2.5px solid white;
+    color: white;
+}
