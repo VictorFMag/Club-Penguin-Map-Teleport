@@ -6,4 +6,8 @@ There is still a lot to be done, like:
 -Implement a player and make it possible to walk in the maps
 -Implement the original music themes of each map
 
+<h1>How to teleport</h1>
+1) Click in the map icon
+2) Choose and click in the map you want to go (still have some maps to implement)
+
 Please enjoy and feel free to modify as much as you want to.
